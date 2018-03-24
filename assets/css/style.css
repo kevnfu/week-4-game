@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.character {
+    width: 200px;
+    height: 140px;
+    border-style: solid;
+    border-color: green;
+    text-align: center;
+    margin: 3px;
+    float: left;
+}
+
+.character > img {
+    width: 90%;
+    height: 70%;
+}
+
+.character.enemy {
+    border-color: black;
+    background-color: red;
+}
+
+.character.defender {
+    color: white;
+    background-color: black;
+    border-color: green;
+}
